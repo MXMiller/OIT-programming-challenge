@@ -8,7 +8,7 @@ int RomToDec(vector<char> input){
 	int dec = 0;
 	int next = 0;
 
-	//go through each letter in the roman numeral and add it's value to the result
+	//go through each letter in the roman numeral
 	
 	for(int i = input.size() - 1; i >= 0; i--){
 				
@@ -118,7 +118,7 @@ string DecToRom(vector<char> input){
 			curr = 0;
 		}
 
-		//convert to roman numeral and add to the string
+		//convert to roman numeral
 		if(curr == 1){
 			if(j == 3){
 				rom = "M" + rom;
@@ -243,7 +243,7 @@ int main() {
 	//call functions
 	if(roman == true){
 		
-		cout << "Converting from Roman to Decimal...\n";
+		cout << "Converting from Roman Numerals to Decimal...\n";
 		dec = RomToDec(inputAsChars);
 		
 		//output the converted int
@@ -251,7 +251,7 @@ int main() {
 	}
 	else if(roman == false){
 		
-		cout << "Converting from Decimal to Roman...\n";
+		cout << "Converting from Decimal to Roman Numerals...\n";
 		rom = DecToRom(inputAsChars);
 
 		//output the converted string
