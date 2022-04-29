@@ -8,7 +8,7 @@ int RomToDec(vector<char> input){
 	int dec = 0;
 	int next = 0;
 
-	//go through each letter in the roman numeral
+	//go through each letter in the roman numeral and add it's value to the result
 	
 	for(int i = input.size() - 1; i >= 0; i--){
 				
@@ -118,7 +118,7 @@ string DecToRom(vector<char> input){
 			curr = 0;
 		}
 
-		//convert to roman numeral
+		//convert to roman numeral and add to the string
 		if(curr == 1){
 			if(j == 3){
 				rom = "M" + rom;
